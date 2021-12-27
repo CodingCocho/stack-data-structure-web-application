@@ -54,6 +54,18 @@ body
           width: 80%;
           border-style: solid;
           border-color: black;
+          display: flex;
+          .stack-box
+          {
+              width: calc(100%/5);
+              height: 100%;
+              border-style: solid;
+              border-color: black;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 2rem;
+          }
       }
   }
   .stack-functions-container

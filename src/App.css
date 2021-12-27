@@ -79,6 +79,26 @@ body {
   width: 80%;
   border-style: solid;
   border-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .stack-container .stack .stack-box {
+  width: calc(100%/5);
+  height: 100%;
+  border-style: solid;
+  border-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
 }
 
 .App .stack-functions-container {
