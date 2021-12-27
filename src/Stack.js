@@ -3,7 +3,7 @@ This class implements the Stack data structure which follows LIFO which means la
 This is implemented with the function push which inserts an element into the Stack at the first
 empty location and the function pop which removes the last element pushed. 
 */
-class Stack {
+export default class Stack {
     // Data fields
     // Holds the size of the Stack
     #size = 0;
