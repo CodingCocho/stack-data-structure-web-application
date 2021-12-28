@@ -72,7 +72,7 @@ export default class Stack {
       // Replace the data with an undefined element
       this.#stack[this.#pointer] = undefined;
       // Alert the user we popped successfully 
-      alert("Popping from Stack:" + data)
+      alert("Popping from Stack: " + data)
       // Return the element popped
       return data;
     }
