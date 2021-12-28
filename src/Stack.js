@@ -42,14 +42,14 @@ export default class Stack {
       // Check first if the Stack is full
       if (this.isFull()) {
         // Alert the user the Stack is full therefore we cannot add a new element
-        alert('Stack is full.');
+        alert('Pushing into a full Stack.');
         return;
       }
   
       // Else we push the new element into the Stack
       this.#stack[this.#pointer] = element;
       // Alert the user we pushed successfully
-      alert("Pushing into Stack: " + element)
+      alert("Pushing into Stack: " + element);
       // Locate the pointer to the next empty location in the Stack
       this.#pointer++;
     }
@@ -82,7 +82,7 @@ export default class Stack {
       // Check first if the Stack is empty
       if (this.isEmpty()) {
         // Alert the user that the Stack is empty therefore we cannot peek
-        alert('Stack is empty.');
+        alert('Peeking from an empty Stack.');
         return;
       }
   
