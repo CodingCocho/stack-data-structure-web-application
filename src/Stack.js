@@ -42,12 +42,14 @@ export default class Stack {
       // Check first if the Stack is full
       if (this.isFull()) {
         // Alert the user the Stack is full therefore we cannot add a new element
-        alert('Stack is full');
+        alert('Stack is full.');
         return;
       }
   
       // Else we push the new element into the Stack
       this.#stack[this.#pointer] = element;
+      // Alert the user we pushed successfully
+      alert("Pushing into Stack: " + element)
       // Locate the pointer to the next empty location in the Stack
       this.#pointer++;
     }
@@ -59,7 +61,7 @@ export default class Stack {
       // Check first if the Stack is empty
       if (this.isEmpty()) {
         // Alert the user the Stack is empty therefore we cannot remove an element
-        alert('Popping from an empty Stack');
+        alert('Popping from an empty Stack.');
         return;
       }
   
@@ -69,6 +71,8 @@ export default class Stack {
       const data = this.#stack[this.#pointer];
       // Replace the data with an undefined element
       this.#stack[this.#pointer] = undefined;
+      // Alert the user we popped successfully 
+      alert("Popping from Stack:" + data)
       // Return the element popped
       return data;
     }
