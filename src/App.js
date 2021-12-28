@@ -45,6 +45,12 @@ function App() {
     setPointer(stack.getPointer())
   }
 
+  const peekStack = () =>
+  {
+    // Call the Stack peek method
+    stack.peek();
+  }
+
   return (
     <div className="App">
 
@@ -73,7 +79,7 @@ function App() {
           <button onClick={newStack}>New Stack</button>
           <button onClick={pushStack}>Push</button>
           <button onClick={popStack}>Pop</button>
-          <button>Peek</button>
+          <button onClick={peekStack}>Peek</button>
         </div>
     </div>
   );

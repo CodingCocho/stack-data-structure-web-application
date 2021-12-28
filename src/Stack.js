@@ -82,6 +82,8 @@ export default class Stack {
         return;
       }
   
+      //Alert the user what element is being peeked
+      alert("Peeking Stack: " + this.#stack[this.#pointer - 1]);
       // Return the last element pushed into the Stack
       return this.#stack[this.#pointer - 1];
     }
