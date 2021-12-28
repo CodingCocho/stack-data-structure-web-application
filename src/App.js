@@ -25,16 +25,23 @@ function App() {
     setStack(new Stack(5));
   }
 
+  // Local function to push an element into the Stack
   const pushStack = () =>
   {
+    // Prompt the user for the element
     const element = prompt("Enter an element to push to the Stack", 0)
+    // Call the Stack push method
     stack.push(element);
+    // Set the pointer in the useState to rerender
     setPointer(stack.getPointer())
   }
 
+  // Local function to pop an element from the Stack
   const popStack = () =>
   {
+    // Call the Stack pop method
     stack.pop();
+    // Set the pointer in the useState to rerender
     setPointer(stack.getPointer())
   }
 
@@ -48,12 +55,15 @@ function App() {
 
         <div className='stack-container'>
           <div className='stack'>
+            {/* Map out the Stack and create appropriate divs for elements */}
             {stack.getStack().map( (element) =>
             {
+              // Return empty div for undefined elements
               if(element === undefined)
               {
                 return <div></div>
               }
+              // Return stack-box div for elements 'defined'
               return <div className='stack-box'>{element}</div>
             })}
           </div>
@@ -63,6 +73,7 @@ function App() {
           <button onClick={newStack}>New Stack</button>
           <button onClick={pushStack}>Push</button>
           <button onClick={popStack}>Pop</button>
+          <button>Peek</button>
         </div>
     </div>
   );
